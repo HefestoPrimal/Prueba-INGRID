@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro Simple</title>
+    </head>
+    <body>
+        <h1>Registro de Nombre y Teléfono</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Registrar</button>
+        </form>
+        <h2>Registros</h2>
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+            </tr>
+            {% for registro in registros %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ registro.nombre }}</td>
+                <td>{{ registro.telefono }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3">No hay registros disponibles.</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
