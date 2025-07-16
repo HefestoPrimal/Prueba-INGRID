@@ -11,7 +11,7 @@ def registro_view(request):
     else:
         form = RegistroForm()
     registros = Registro.objects.all().order_by('fecha_registro')
-    return render(request, 'core/registro.html', {'form': form, 'registros': registros})
+    return render(request, 'registro.html', {'form': form, 'registros': registros})
 
 def mostrarHTML(request):
     return render(request, 'muestra.html')

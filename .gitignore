@@ -1,0 +1,45 @@
+# Entornos virtuales
+venv/
+venvTest/
+venvDeploy/
+ENV/
+.env/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de configuración de entorno
+.env
+*.env
+
+# Archivos de bases de datos locales
+db.sqlite3
+
+# Archivos de logs
+*.log
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+
+# Archivos de migraciones de Django (opcional, si quieres ignorar los archivos de migración)
+# */migrations/*.pyc
+# */migrations/*.pyo
+# */migrations/__pycache__/
+
+# Archivos de compilación
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Archivos de media y estáticos generados
+media/
+staticfiles/
+
+# Otros
+.DS_Store
+Thumbs.db
