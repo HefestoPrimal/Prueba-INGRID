@@ -43,3 +43,9 @@ staticfiles/
 # Otros
 .DS_Store
 Thumbs.db
+
+# Bases de datos
+*.sqlite3
+*.mysql
+*.sql.gz
+*.dump

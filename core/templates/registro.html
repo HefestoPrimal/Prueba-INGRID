@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Registro Simple</title>
+    <title>Registro Simple</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/estiloCore.css' %}">
     </head>
     <body>
-        <h1>Registro de Nombre y Teléfono</h1>
-        <form method="post">
+        <h1 id="tituloPpal">Registro de Nombre y Teléfono</h1>
+        <form method="post" id="formularioPpal">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit">Registrar</button>
+            <button type="submit" id="buttonRegis">Registrar</button>
         </form>
-        <h2>Registros</h2>
-        <table border="1">
-            <tr>
+        <h2 id="tituloTabla">Registros</h2>
+        <table border="1" id="tablaRegistros">
+            <tr id="rowTitulo">
                 <th>ID</th>
                 <th>Nombre</th>
                 <th>Teléfono</th>
