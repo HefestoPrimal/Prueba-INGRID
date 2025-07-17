@@ -45,6 +45,7 @@ staticfiles/
 Thumbs.db
 
 # Bases de datos
+db.sqlite3
 *.sqlite3
 *.mysql
 *.sql.gz
